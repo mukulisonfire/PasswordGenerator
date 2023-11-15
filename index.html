@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Helix | Keychain - Password Generator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav>
+      <h1>Password Generator</h1>
+    </nav>
+    <main>
+      <div class="container">
+        <form>
+          <label for="len">Enter Password Length: </label>
+          <input type="text" id="len" autofocus>
+          <button id="generateButton" onclick="generatePassword()">Generate</button>
+          <label for="generatedPassword">Generated Password: </label>
+          <span id="generatedPassword"></span>
+
+          <button id="copyButton" onclick="copyPassword()" type="button">Copy Password</button>
+        </form>
+      </div>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
